@@ -1,0 +1,34 @@
+[project]
+name = "capstone-project"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Rajan Garg",email = "rajan.garg+bold@bold.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12,<4.0.0"
+dependencies = [
+    "python-dotenv (>=1.2.3,<2.0.0)",
+    "openai (>=3.19.0,<4.0.0)",
+    "chromadb (>=1.5.9,<2.0.0)",
+    "rich (>=15.0.0,<16.0.0)",
+    "pydantic (>=2.13.5,<3.0.0)",
+    "langchain-huggingface (>=1.2.2,<2.0.0)",
+    "langchain-openai (>=1.6.7,<2.0.0)",
+    "langchain-anthropic (>=1.7.5,<2.0.0)",
+    "tree-sitter (>=0.26.0,<0.27.0)",
+    "tree-sitter-languages (>=1.10.2,<2.0.0)",
+    "langchain (>=1.4.3,<2.0.0)",
+    "langchain-core (>=1.6.6,<2.0.0)"
+]
+[tool.poetry]
+packages = [{include = "capstone_project"}]
+
+
+[tool.poetry.scripts]
+capstone_project = "capstone_project.main:run"
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

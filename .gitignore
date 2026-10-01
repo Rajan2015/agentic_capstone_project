@@ -1,0 +1,23 @@
+
+# Secrets — never commit
+.env
+*/.env
+
+
+# Vector store data
+.chromadb/
+
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+
+# Poetry
+poetry.lock
+
+
+# Virtual environments
+.venv/
+venv/
